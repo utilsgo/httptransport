@@ -5,6 +5,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+# [1.22.0](https://github.com/utilsgo/httptransport/compare/v1.21.11...v1.22.0)
+
+### Features
+
+* **feat** 🎸 go-courier to utilsgo ([7375483](https://github.com/utilsgo/httptransport/commit/73754833e5dda2d1ee98b701fcf7aca7712153a6))
+
+
+
 # [1.21.11](https://github.com/go-courier/httptransport/compare/v1.21.10...v1.21.11)
 
 ### Bug Fixes
