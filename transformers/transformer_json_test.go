@@ -7,10 +7,10 @@ import (
 	"reflect"
 	"testing"
 
-	verrors "github.com/go-courier/httptransport/validator"
 	typesutil "github.com/go-courier/x/types"
 	. "github.com/onsi/gomega"
 	"github.com/pkg/errors"
+	verrors "github.com/utilsgo/httptransport/validator"
 )
 
 type S string
@@ -70,14 +70,15 @@ func TestJSONTransformer(t *testing.T) {
 		cases := []struct {
 			json     string
 			location string
-		}{{
-			`{
+		}{
+			{
+				`{
 	"data": {
 		"s": "111",
 		"bool": true
 	}
 }`, "data.s",
-		},
+			},
 			{
 				`
 {

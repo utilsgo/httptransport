@@ -6,17 +6,16 @@ import (
 	"net/textproto"
 	"reflect"
 
-	"github.com/go-courier/httptransport/httpx"
 	encodingx "github.com/go-courier/x/encoding"
 	typesutil "github.com/go-courier/x/types"
+	"github.com/utilsgo/httptransport/httpx"
 )
 
 func init() {
 	TransformerMgrDefault.Register(&TransformerHTMLText{})
 }
 
-type TransformerHTMLText struct {
-}
+type TransformerHTMLText struct{}
 
 func (t *TransformerHTMLText) String() string {
 	return t.Names()[0]

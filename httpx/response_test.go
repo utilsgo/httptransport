@@ -12,7 +12,7 @@ import (
 	. "github.com/onsi/gomega"
 
 	"github.com/go-courier/courier"
-	"github.com/go-courier/httptransport/testify"
+	"github.com/utilsgo/httptransport/testify"
 )
 
 type Data struct{}

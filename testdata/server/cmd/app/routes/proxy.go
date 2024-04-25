@@ -5,20 +5,18 @@ import (
 	"time"
 
 	"github.com/go-courier/courier"
-	"github.com/go-courier/httptransport/client"
-	"github.com/go-courier/httptransport/httpx"
+	"github.com/utilsgo/httptransport/client"
+	"github.com/utilsgo/httptransport/httpx"
 
-	"github.com/go-courier/httptransport"
+	"github.com/utilsgo/httptransport"
 )
 
 var ProxyRouter = courier.NewRouter(httptransport.Group("/proxy"))
 
-var (
-	c = &client.Client{
-		Host:    "ip-api.com",
-		Timeout: 100 * time.Second,
-	}
-)
+var c = &client.Client{
+	Host:    "ip-api.com",
+	Timeout: 100 * time.Second,
+}
 
 func init() {
 	c.SetDefaults()

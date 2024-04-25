@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-courier/httptransport/httpx"
-	"github.com/go-courier/logr"
 	"github.com/go-courier/metax"
 	"github.com/google/uuid"
 	"github.com/pkg/errors"
+	"github.com/utilsgo/httptransport/httpx"
+	"github.com/utilsgo/logr"
 )
 
 func LogHandler() func(handler http.Handler) http.Handler {
@@ -74,9 +74,6 @@ func (h *loggerHandler) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 	logger := logr.FromContext(req.Context())
 
 	level, _ := logr.ParseLevel(strings.ToLower(req.Header.Get("x-log-level")))
-	if level == logr.PanicLevel {
-		level = logr.TraceLevel
-	}
 
 	defer func() {
 		duration := time.Since(startAt)

@@ -13,8 +13,7 @@ import (
 	. "github.com/onsi/gomega"
 )
 
-type SomeTextMarshaler struct {
-}
+type SomeTextMarshaler struct{}
 
 func (*SomeTextMarshaler) MarshalText() ([]byte, error) {
 	return []byte("SomeTextMarshaler"), nil
@@ -143,7 +142,7 @@ func ExampleNewStructValidator() {
 			"12": "",
 		},
 		MapStruct: map[string]SubStruct{
-			"222": SubStruct{},
+			"222": {},
 		},
 	}
 

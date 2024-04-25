@@ -2,8 +2,8 @@ package routes
 
 import (
 	"github.com/go-courier/courier"
-	"github.com/go-courier/httptransport"
-	"github.com/go-courier/httptransport/openapi"
+	"github.com/utilsgo/httptransport"
+	"github.com/utilsgo/httptransport/openapi"
 )
 
 var RootRouter = courier.NewRouter(httptransport.BasePath("/demo"))

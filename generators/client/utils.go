@@ -4,8 +4,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/go-courier/httptransport/generators/openapi"
 	"github.com/go-courier/oas"
+	"github.com/utilsgo/httptransport/generators/openapi"
 )
 
 func mayPrefixDeprecated(desc string, deprecated bool) []string {

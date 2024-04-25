@@ -1,7 +1,7 @@
 package strfmt
 
 import (
-	github_com_go_courier_validator "github.com/go-courier/httptransport/validator"
+	github_com_go_courier_validator "github.com/utilsgo/httptransport/validator"
 )
 
 func init() { github_com_go_courier_validator.ValidatorMgrDefault.Register(ASCIIValidator) }

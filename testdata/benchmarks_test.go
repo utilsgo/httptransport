@@ -12,10 +12,10 @@ import (
 	contextx "github.com/go-courier/x/context"
 	"github.com/julienschmidt/httprouter"
 
-	"github.com/go-courier/httptransport"
-	"github.com/go-courier/httptransport/httpx"
-	"github.com/go-courier/httptransport/testdata/server/pkg/types"
-	"github.com/go-courier/httptransport/transformers"
+	"github.com/utilsgo/httptransport"
+	"github.com/utilsgo/httptransport/httpx"
+	"github.com/utilsgo/httptransport/testdata/server/pkg/types"
+	"github.com/utilsgo/httptransport/transformers"
 )
 
 type WithAuth struct {
@@ -41,9 +41,7 @@ func (GetByID) Path() string {
 	return "/:id"
 }
 
-var (
-	req = &GetByID{}
-)
+var req = &GetByID{}
 
 func init() {
 	req.ID = "1z"

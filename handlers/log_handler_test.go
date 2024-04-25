@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-courier/httptransport/testify"
-	"github.com/go-courier/logr"
+	"github.com/utilsgo/httptransport/testify"
+	"github.com/utilsgo/logr"
 )
 
 func ExampleLogHandler() {

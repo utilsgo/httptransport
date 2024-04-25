@@ -2,8 +2,7 @@ package httpx
 
 import net_http "net/http"
 
-type Method struct {
-}
+type Method struct{}
 
 type MethodGet struct{}
 

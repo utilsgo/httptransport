@@ -6,8 +6,8 @@ import (
 	"sort"
 
 	"github.com/fatih/color"
-	"github.com/go-courier/httptransport"
-	"github.com/go-courier/httptransport/testdata/server/cmd/app/routes"
+	"github.com/utilsgo/httptransport"
+	"github.com/utilsgo/httptransport/testdata/server/cmd/app/routes"
 )
 
 func ExampleGroup() {

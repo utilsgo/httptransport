@@ -7,16 +7,15 @@ import (
 	"net/textproto"
 	"reflect"
 
-	"github.com/go-courier/httptransport/httpx"
 	typesx "github.com/go-courier/x/types"
+	"github.com/utilsgo/httptransport/httpx"
 )
 
 func init() {
 	TransformerMgrDefault.Register(&TransformerOctetStream{})
 }
 
-type TransformerOctetStream struct {
-}
+type TransformerOctetStream struct{}
 
 func (t *TransformerOctetStream) String() string {
 	return t.Names()[0]

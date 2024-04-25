@@ -178,7 +178,6 @@ meta, err := req.Do(ctx, c, metas...).Into(resp)
 				codegen.Return(codegen.Expr("req.InvokeContext(context.Background(), c, metas...)")),
 			),
 	)
-
 }
 
 func (g *OperationGenerator) ParamField(ctx context.Context, parameter *oas.Parameter) *codegen.SnippetField {

@@ -6,10 +6,10 @@ import (
 	"strings"
 
 	"github.com/go-courier/courier"
-	"github.com/go-courier/httptransport/httpx"
 	"github.com/go-courier/packagesx"
+	"github.com/utilsgo/httptransport/httpx"
 
-	"github.com/go-courier/httptransport"
+	"github.com/utilsgo/httptransport"
 )
 
 const (

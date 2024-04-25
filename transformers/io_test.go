@@ -40,7 +40,6 @@ func TestNewBuffers(t *testing.T) {
 	inputs := strings.Split(strings.Repeat("1", 10), "")
 
 	t.Run("StringReaders", func(t *testing.T) {
-
 		buffers := NewStringReaders(inputs)
 
 		results := make([]string, 0)

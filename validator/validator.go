@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/go-courier/httptransport/validator/rules"
 	typesutil "github.com/go-courier/x/types"
+	"github.com/utilsgo/httptransport/validator/rules"
 )
 
 func MustParseRuleStringWithType(ruleStr string, typ typesutil.Type) *Rule {

@@ -4,13 +4,15 @@ import (
 	"context"
 
 	"github.com/go-courier/courier"
-	"github.com/go-courier/httptransport/httpx"
+	"github.com/utilsgo/httptransport/httpx"
 
-	"github.com/go-courier/httptransport"
+	"github.com/utilsgo/httptransport"
 )
 
-var GroupRouter = courier.NewRouter(httptransport.Group("/group"))
-var HeathRouter = courier.NewRouter(&Health{})
+var (
+	GroupRouter = courier.NewRouter(httptransport.Group("/group"))
+	HeathRouter = courier.NewRouter(&Health{})
+)
 
 func init() {
 	GroupRouter.Register(HeathRouter)

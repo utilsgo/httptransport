@@ -12,10 +12,10 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/go-courier/httptransport/httpx"
-	verrors "github.com/go-courier/httptransport/validator"
 	typesutil "github.com/go-courier/x/types"
 	"github.com/pkg/errors"
+	"github.com/utilsgo/httptransport/httpx"
+	verrors "github.com/utilsgo/httptransport/validator"
 )
 
 func init() {

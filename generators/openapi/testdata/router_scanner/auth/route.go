@@ -6,11 +6,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-courier/httptransport/httpx"
+	"github.com/utilsgo/httptransport/httpx"
 )
 
-type NoContent struct {
-}
+type NoContent struct{}
 
 func (NoContent) Output(ctx context.Context) (interface{}, error) {
 	return nil, nil
@@ -74,8 +73,7 @@ type FormDataMultipart struct {
 	Files []*multipart.FileHeader `name:"files"`
 }
 
-type RespWithDescribers struct {
-}
+type RespWithDescribers struct{}
 
 func (RespWithDescribers) Output(ctx context.Context) (r interface{}, err error) {
 	if true {

@@ -8,8 +8,8 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/go-courier/courier"
-	"github.com/go-courier/httptransport/httpx"
 	"github.com/julienschmidt/httprouter"
+	"github.com/utilsgo/httptransport/httpx"
 )
 
 type MethodDescriber interface {

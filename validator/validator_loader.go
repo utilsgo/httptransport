@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/go-courier/httptransport/validator/rules"
 	encodingx "github.com/go-courier/x/encoding"
 	reflectx "github.com/go-courier/x/reflect"
 	typesutil "github.com/go-courier/x/types"
+	"github.com/utilsgo/httptransport/validator/rules"
 )
 
 func NewValidatorLoader(validatorCreator ValidatorCreator) *ValidatorLoader {

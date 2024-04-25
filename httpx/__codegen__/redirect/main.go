@@ -97,7 +97,6 @@ func (r `+statusKey+`) Location() *? {
 				Path: "/test",
 			}, redirectStatusCodes[i]),
 		)
-
 	}
 
 	testFile.WriteFile()

@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-courier/logr"
 	"github.com/pkg/errors"
+	"github.com/utilsgo/logr"
 )
 
 func NewLogRoundTripper() func(roundTripper http.RoundTripper) http.RoundTripper {

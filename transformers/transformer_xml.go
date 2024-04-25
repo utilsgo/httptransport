@@ -7,16 +7,15 @@ import (
 	"net/textproto"
 	"reflect"
 
-	"github.com/go-courier/httptransport/httpx"
 	typesutil "github.com/go-courier/x/types"
+	"github.com/utilsgo/httptransport/httpx"
 )
 
 func init() {
 	TransformerMgrDefault.Register(&XMLTransformer{})
 }
 
-type XMLTransformer struct {
-}
+type XMLTransformer struct{}
 
 func (XMLTransformer) Names() []string {
 	return []string{"application/xml", "xml"}

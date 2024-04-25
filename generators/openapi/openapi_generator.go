@@ -103,7 +103,7 @@ func (g *OpenAPIGenerator) patchPath(openapiPath string, operation *oas.Operatio
 	return reHttpRouterPath.ReplaceAllStringFunc(openapiPath, func(str string) string {
 		name := reHttpRouterPath.FindAllStringSubmatch(str, -1)[0][1]
 
-		var isParameterDefined = false
+		isParameterDefined := false
 
 		for _, parameter := range operation.Parameters {
 			if parameter.In == "path" && parameter.Name == name {

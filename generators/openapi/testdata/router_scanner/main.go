@@ -4,11 +4,11 @@ import (
 	"context"
 
 	"github.com/go-courier/courier"
-	"github.com/go-courier/httptransport/generators/openapi/testdata/router_scanner/auth"
-	"github.com/go-courier/httptransport/generators/openapi/testdata/router_scanner/group"
-	"github.com/go-courier/httptransport/httpx"
+	"github.com/utilsgo/httptransport/generators/openapi/testdata/router_scanner/auth"
+	"github.com/utilsgo/httptransport/generators/openapi/testdata/router_scanner/group"
+	"github.com/utilsgo/httptransport/httpx"
 
-	"github.com/go-courier/httptransport"
+	"github.com/utilsgo/httptransport"
 )
 
 type Get struct {

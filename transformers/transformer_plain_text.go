@@ -5,17 +5,16 @@ import (
 	"io"
 	"net/textproto"
 
-	"github.com/go-courier/httptransport/httpx"
 	encodingx "github.com/go-courier/x/encoding"
 	typesx "github.com/go-courier/x/types"
+	"github.com/utilsgo/httptransport/httpx"
 )
 
 func init() {
 	TransformerMgrDefault.Register(&TransformerPlainText{})
 }
 
-type TransformerPlainText struct {
-}
+type TransformerPlainText struct{}
 
 func (t *TransformerPlainText) String() string {
 	return t.Names()[0]

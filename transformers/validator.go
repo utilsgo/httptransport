@@ -3,8 +3,8 @@ package transformers
 import (
 	"context"
 
-	"github.com/go-courier/httptransport/validator"
 	typex "github.com/go-courier/x/types"
+	"github.com/utilsgo/httptransport/validator"
 )
 
 type MayValidator interface {

@@ -7,13 +7,13 @@ import (
 	"net/url"
 	"reflect"
 
-	"github.com/go-courier/httptransport/httpx"
+	"github.com/utilsgo/httptransport/httpx"
 
 	reflectx "github.com/go-courier/x/reflect"
 
-	verrors "github.com/go-courier/httptransport/validator"
 	typesutil "github.com/go-courier/x/types"
 	"github.com/pkg/errors"
+	verrors "github.com/utilsgo/httptransport/validator"
 )
 
 func init() {

@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"net/textproto"
 
-	"github.com/go-courier/httptransport/httpx"
+	"github.com/utilsgo/httptransport/httpx"
 )
 
 func MIMEHeader(headers ...textproto.MIMEHeader) textproto.MIMEHeader {

@@ -8,14 +8,16 @@ import (
 	"time"
 
 	"github.com/go-courier/courier"
-	"github.com/go-courier/httptransport"
-	"github.com/go-courier/httptransport/testdata/server/cmd/app/routes"
-	"github.com/go-courier/httptransport/testify"
 	. "github.com/onsi/gomega"
+	"github.com/utilsgo/httptransport"
+	"github.com/utilsgo/httptransport/testdata/server/cmd/app/routes"
+	"github.com/utilsgo/httptransport/testify"
 )
 
-var rtMgr = httptransport.NewRequestTransformerMgr(nil, nil)
-var serviceMeta = &httptransport.ServiceMeta{Name: "service-test", Version: "1.0.0"}
+var (
+	rtMgr       = httptransport.NewRequestTransformerMgr(nil, nil)
+	serviceMeta = &httptransport.ServiceMeta{Name: "service-test", Version: "1.0.0"}
+)
 
 func init() {
 	rtMgr.SetDefaults()

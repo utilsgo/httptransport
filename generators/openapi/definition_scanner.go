@@ -11,11 +11,11 @@ import (
 
 	"github.com/go-courier/codegen"
 	"github.com/go-courier/enumeration/scanner"
-	"github.com/go-courier/logr"
 	"github.com/go-courier/oas"
 	"github.com/go-courier/packagesx"
 	typesutil "github.com/go-courier/x/types"
 	"github.com/pkg/errors"
+	"github.com/utilsgo/logr"
 )
 
 func NewDefinitionScanner(pkg *packagesx.Package) *DefinitionScanner {

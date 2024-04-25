@@ -4,18 +4,20 @@ import (
 	"mime/multipart"
 	"time"
 
-	time2 "github.com/go-courier/httptransport/generators/openapi/testdata/definition_scanner/time"
+	time2 "github.com/utilsgo/httptransport/generators/openapi/testdata/definition_scanner/time"
 )
 
 type Interface interface{}
 
-type Binary *multipart.FileHeader
-type String string
-type Bool bool
-type Float float32
-type Double float64
-type Int int
-type Uint uint
+type (
+	Binary *multipart.FileHeader
+	String string
+	Bool   bool
+	Float  float32
+	Double float64
+	Int    int
+	Uint   uint
+)
 
 // 日期
 type Time time.Time
@@ -28,9 +30,11 @@ type FakeBool int
 
 type Map map[string]String
 
-type ArrayString [2]string
-type SliceString []string
-type SliceNamed []String
+type (
+	ArrayString [2]string
+	SliceString []string
+	SliceNamed  []String
+)
 
 type TimeAlias = time.Time
 

@@ -12,16 +12,16 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/go-courier/httptransport/httpx"
-	"github.com/go-courier/httptransport/transformers"
-	"github.com/go-courier/httptransport/validator"
-	verrors "github.com/go-courier/httptransport/validator"
 	"github.com/go-courier/statuserror"
 	contextx "github.com/go-courier/x/context"
 	reflectx "github.com/go-courier/x/reflect"
 	typex "github.com/go-courier/x/types"
 	"github.com/julienschmidt/httprouter"
 	"github.com/pkg/errors"
+	"github.com/utilsgo/httptransport/httpx"
+	"github.com/utilsgo/httptransport/transformers"
+	"github.com/utilsgo/httptransport/validator"
+	verrors "github.com/utilsgo/httptransport/validator"
 )
 
 func NewRequestTransformerMgr(

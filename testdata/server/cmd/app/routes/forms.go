@@ -5,10 +5,10 @@ import (
 	"mime/multipart"
 
 	"github.com/go-courier/courier"
-	"github.com/go-courier/httptransport/httpx"
-	"github.com/go-courier/httptransport/testdata/server/pkg/types"
+	"github.com/utilsgo/httptransport/httpx"
+	"github.com/utilsgo/httptransport/testdata/server/pkg/types"
 
-	"github.com/go-courier/httptransport"
+	"github.com/utilsgo/httptransport"
 )
 
 var FormsRouter = courier.NewRouter(httptransport.Group("/forms"))

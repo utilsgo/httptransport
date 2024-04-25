@@ -48,60 +48,78 @@ func TestDefinitionScanner(t *testing.T) {
     "children"
   ],
   "x-id": "Node"
-}`},
+}`,
+		},
 		{
 			"Interface", // language=JSON
 			`{
   "x-id": "Interface"
 }
-`}, {
+`,
+		},
+		{
 			"Binary", // language=JSON
 			`{
   "type": "string",
   "format": "binary",
   "x-go-star-level": 1,
   "x-id": "Binary"
-}`}, {
+}`,
+		},
+		{
 			"String", // language=JSON
 			`{
   "type": "string",
   "x-id": "String"
-}`}, {
+}`,
+		},
+		{
 			"String", // language=JSON
 			`{
   "type": "string",
   "x-id": "String"
-}`}, {
+}`,
+		},
+		{
 			"Bool", // language=JSON
 			`{
   "type": "boolean",
   "x-id": "Bool"
-}`}, {
-
+}`,
+		},
+		{
 			"Float", // language=JSON
 			`{
   "type": "number",
   "format": "float",
   "x-id": "Float"
-}`}, {
+}`,
+		},
+		{
 			"Double", // language=JSON
 			`{
   "type": "number",
   "format": "double",
   "x-id": "Double"
-}`}, {
+}`,
+		},
+		{
 			"Int", // language=JSON
 			`{
   "type": "integer",
   "format": "int32",
   "x-id": "Int"
-}`}, {
+}`,
+		},
+		{
 			"Uint", // language=JSON
 			`{
   "type": "integer",
   "format": "uint32",
   "x-id": "Uint"
-}`}, {
+}`,
+		},
+		{
 			"Time", // language=JSON
 			`{
   "type": "string",
@@ -109,13 +127,17 @@ func TestDefinitionScanner(t *testing.T) {
   "description": "日期",
   "x-id": "Time"
 }
-`}, {
+`,
+		},
+		{
 			"FakeBool", // language=JSON
 			`{
   "type": "boolean",
   "x-id": "FakeBool"
 }
-`}, {
+`,
+		},
+		{
 			"Enum", // language=JSON
 			`{
   "type": "string",
@@ -128,7 +150,9 @@ func TestDefinitionScanner(t *testing.T) {
     "two"
   ],
   "x-id": "Enum"
-}`}, {
+}`,
+		},
+		{
 			"Map", // language=JSON
 			`{
   "type": "object",
@@ -139,7 +163,9 @@ func TestDefinitionScanner(t *testing.T) {
     "type": "string"
   },
   "x-id": "Map"
-}`}, {
+}`,
+		},
+		{
 			"ArrayString", // language=JSON
 			`{
   "type": "array",
@@ -149,7 +175,9 @@ func TestDefinitionScanner(t *testing.T) {
   "maxItems": 2,
   "minItems": 2,
   "x-id": "ArrayString"
-}`}, {
+}`,
+		},
+		{
 			"SliceString", // language=JSON
 			`{
   "type": "array",
@@ -157,7 +185,9 @@ func TestDefinitionScanner(t *testing.T) {
     "type": "string"
   },
   "x-id": "SliceString"
-}`}, {
+}`,
+		},
+		{
 			"SliceNamed", // language=JSON
 			`{
   "type": "array",
@@ -165,14 +195,18 @@ func TestDefinitionScanner(t *testing.T) {
     "$ref": "#/components/schemas/String"
   },
   "x-id": "SliceNamed"
-}`}, {
+}`,
+		},
+		{
 			"TimeAlias", // language=JSON
 			`{
   "type": "string",
   "format": "date-time",
   "x-go-vendor-type": "time.Time",
   "x-id": "TimeTime"
-}`}, {
+}`,
+		},
+		{
 			"Struct", // language=JSON
 			`{
   "type": "object",
@@ -277,7 +311,9 @@ func TestDefinitionScanner(t *testing.T) {
     "slice"
   ],
   "x-id": "Struct"
-}`}, {
+}`,
+		},
+		{
 			"Composed", // language=JSON
 			`{
   "allOf": [
@@ -290,7 +326,9 @@ func TestDefinitionScanner(t *testing.T) {
       "x-id": "Composed"
     }
   ]
-}`}, {
+}`,
+		},
+		{
 			"NamedComposed", // language=JSON
 			`{
   "type": "object",
@@ -311,7 +349,8 @@ func TestDefinitionScanner(t *testing.T) {
     "part"
   ],
   "x-id": "NamedComposed"
-}`},
+}`,
+		},
 	}
 
 	for _, c := range cases {

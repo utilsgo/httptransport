@@ -17,16 +17,16 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	"github.com/go-courier/httptransport/httpx"
+	"github.com/utilsgo/httptransport/httpx"
 
-	"github.com/go-courier/httptransport/testdata/server/pkg/types"
-	"github.com/go-courier/httptransport/transformers"
-	errors "github.com/go-courier/httptransport/validator"
 	"github.com/go-courier/statuserror"
 	reflectx "github.com/go-courier/x/reflect"
 	perrors "github.com/pkg/errors"
+	"github.com/utilsgo/httptransport/testdata/server/pkg/types"
+	"github.com/utilsgo/httptransport/transformers"
+	errors "github.com/utilsgo/httptransport/validator"
 
-	"github.com/go-courier/httptransport"
+	"github.com/utilsgo/httptransport"
 )
 
 var reContentTypeWithBoundary = regexp.MustCompile(`Content-Type: multipart/form-data; boundary=([A-Za-z0-9]+)`)

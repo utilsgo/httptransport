@@ -8,17 +8,16 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/go-courier/httptransport/httpx"
-	validatorerrors "github.com/go-courier/httptransport/validator"
 	typesutil "github.com/go-courier/x/types"
+	"github.com/utilsgo/httptransport/httpx"
+	validatorerrors "github.com/utilsgo/httptransport/validator"
 )
 
 func init() {
 	TransformerMgrDefault.Register(&TransformerJSON{})
 }
 
-type TransformerJSON struct {
-}
+type TransformerJSON struct{}
 
 func (TransformerJSON) Names() []string {
 	return []string{"application/json", "json"}

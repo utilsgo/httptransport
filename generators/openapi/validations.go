@@ -4,10 +4,10 @@ import (
 	"context"
 	"go/types"
 
-	"github.com/go-courier/httptransport/validator"
 	"github.com/go-courier/oas"
 	"github.com/go-courier/x/ptr"
 	typesutil "github.com/go-courier/x/types"
+	"github.com/utilsgo/httptransport/validator"
 )
 
 func BindSchemaValidationByValidateBytes(s *oas.Schema, typ types.Type, validateBytes []byte) error {

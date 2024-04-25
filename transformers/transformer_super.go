@@ -7,8 +7,8 @@ import (
 
 	pkgerrors "github.com/pkg/errors"
 
-	validatorerrors "github.com/go-courier/httptransport/validator"
 	reflectx "github.com/go-courier/x/reflect"
+	validatorerrors "github.com/utilsgo/httptransport/validator"
 )
 
 func NewTransformerSuper(transformer Transformer, opt *CommonTransformOption) *TransformerSuper {

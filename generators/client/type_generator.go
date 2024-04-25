@@ -11,9 +11,9 @@ import (
 
 	"github.com/go-courier/codegen"
 	"github.com/go-courier/enumeration/scanner"
-	"github.com/go-courier/httptransport/generators/openapi"
 	"github.com/go-courier/oas"
 	"github.com/go-courier/packagesx"
+	"github.com/utilsgo/httptransport/generators/openapi"
 )
 
 func NewTypeGenerator(serviceName string, file *codegen.File) *TypeGenerator {

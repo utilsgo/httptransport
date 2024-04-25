@@ -3,9 +3,9 @@ package client_demo
 import (
 	bytes "bytes"
 
-	github_com_go_courier_httptransport_httpx "github.com/go-courier/httptransport/httpx"
-	github_com_go_courier_httptransport_testdata_server_pkg_types "github.com/go-courier/httptransport/testdata/server/pkg/types"
 	github_com_go_courier_statuserror "github.com/go-courier/statuserror"
+	github_com_go_courier_httptransport_httpx "github.com/utilsgo/httptransport/httpx"
+	github_com_go_courier_httptransport_testdata_server_pkg_types "github.com/utilsgo/httptransport/testdata/server/pkg/types"
 )
 
 type BytesBuffer = bytes.Buffer

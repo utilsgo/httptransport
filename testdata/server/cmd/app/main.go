@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/go-courier/courier"
-	"github.com/go-courier/httptransport/testdata/server/cmd/app/routes"
+	"github.com/utilsgo/httptransport/testdata/server/cmd/app/routes"
 
-	"github.com/go-courier/httptransport"
+	"github.com/utilsgo/httptransport"
 )
 
 func main() {

@@ -156,7 +156,6 @@ func (scanner *RouterScanner) OperatorTypeNamesFromArgs(pkg *packagesx.Package, 
 							ops := scanner.OperatorTypeNamesFromArgs(pkg, compositeLit.Elts...)
 							opTypeNames = append(opTypeNames, ops...)
 						}
-
 					}
 				}
 			}

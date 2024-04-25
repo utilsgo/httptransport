@@ -5,9 +5,9 @@ import (
 	"net/url"
 
 	"github.com/go-courier/courier"
-	"github.com/go-courier/httptransport/httpx"
+	"github.com/utilsgo/httptransport/httpx"
 
-	"github.com/go-courier/httptransport"
+	"github.com/utilsgo/httptransport"
 )
 
 var RedirectRouter = courier.NewRouter(httptransport.Group("/redirect"))

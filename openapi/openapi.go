@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 
 	"github.com/go-courier/courier"
-	"github.com/go-courier/httptransport/httpx"
+	"github.com/utilsgo/httptransport/httpx"
 )
 
 var openAPIJSONData = bytes.NewBuffer(nil)

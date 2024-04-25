@@ -12,14 +12,14 @@ import (
 	"time"
 
 	"github.com/go-courier/courier"
-	"github.com/go-courier/httptransport"
-	"github.com/go-courier/httptransport/client/roundtrippers"
-	"github.com/go-courier/httptransport/httpx"
-	"github.com/go-courier/httptransport/transformers"
 	"github.com/go-courier/statuserror"
 	contextx "github.com/go-courier/x/context"
 	typesutil "github.com/go-courier/x/types"
 	"github.com/pkg/errors"
+	"github.com/utilsgo/httptransport"
+	"github.com/utilsgo/httptransport/client/roundtrippers"
+	"github.com/utilsgo/httptransport/httpx"
+	"github.com/utilsgo/httptransport/transformers"
 	"golang.org/x/net/http2"
 )
 
@@ -226,7 +226,6 @@ func (r *Result) Into(body interface{}) (courier.Metadata, error) {
 		transformer, err := r.TransformerMgr.NewTransformer(context.Background(), typesutil.FromRType(rv.Type()), transformers.TransformerOption{
 			MIME: contentType,
 		})
-
 		if err != nil {
 			return statuserror.Wrap(err, http.StatusInternalServerError, "ReadFailed")
 		}

@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/go-courier/httptransport"
+	"github.com/utilsgo/httptransport"
 )
 
 func TestLogRoundTripper(t *testing.T) {

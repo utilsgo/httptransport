@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/go-courier/httptransport/validator/rules"
 	"github.com/go-courier/x/ptr"
+	"github.com/utilsgo/httptransport/validator/rules"
 )
 
 func MinInt(bitSize uint) int64 {

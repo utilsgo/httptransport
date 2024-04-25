@@ -4,8 +4,8 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/go-courier/httptransport/validator"
 	typesx "github.com/go-courier/x/types"
+	"github.com/utilsgo/httptransport/validator"
 )
 
 type RequestParameter struct {

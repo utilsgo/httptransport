@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/go-courier/logr"
 	"github.com/go-courier/packagesx"
 	. "github.com/onsi/gomega"
+	"github.com/utilsgo/logr"
 )
 
 func TestOpenAPIGenerator(t *testing.T) {

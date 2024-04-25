@@ -138,7 +138,6 @@ func (validator *StructValidator) New(ctx context.Context, rule *Rule) (Validato
 				rule.SetErrMsg([]byte(errMsg))
 			}
 		})
-
 		if err != nil {
 			errSet.AddErr(err, field.Name())
 			return true

@@ -94,6 +94,7 @@ func (v *StringBuilders) SetN(n int) {
 		v.buffers[i] = &strings.Builder{}
 	}
 }
+
 func (v *StringBuilders) NextWriter() io.Writer {
 	if v.idx == 0 && len(v.buffers) == 0 {
 		v.SetN(1)
